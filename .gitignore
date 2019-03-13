@@ -1,0 +1,8 @@
+#Reports and Screenshots
+test-output/
+target/classes
+target/cucumber
+target/generated-sources
+target/maven-status
+target/surefire-reports
+output/

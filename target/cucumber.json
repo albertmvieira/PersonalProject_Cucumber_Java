@@ -1,0 +1,243 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4193173396,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Submit valid data via contact us form",
+        "description": "",
+        "id": "submit-data-to-webdriveruniversity.com-using-contact-us-form;submit-valid-data-via-contact-us-form",
+        "after": [
+          {
+            "result": {
+              "duration": 630029848,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1439179526,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I access webdriveruniversity contact us form",
+            "match": {
+              "location": "ContactUsSteps.i_access_webdriveruniversity_contact_us_form()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 174924375,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter a valid firstname",
+            "match": {
+              "location": "ContactUsSteps.i_enter_a_valid_firstname()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 166111780,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter a valid last name",
+            "match": {
+              "location": "ContactUsSteps.i_enter_a_valid_last_name(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "woods",
+                  "jackson",
+                  "jones"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 217076595,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i enter a valid email address",
+            "match": {
+              "location": "ContactUsSteps.i_enter_a_valid_email_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 206987783,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i enter comments",
+            "match": {
+              "location": "ContactUsSteps.i_enter_comments(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "example comment one",
+                  "example comment two"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2681123625,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i click on the submit button",
+            "match": {
+              "location": "ContactUsSteps.i_click_on_the_submit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71449449,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the information should successfully be submitted via the contact us form",
+            "match": {
+              "location": "ContactUsSteps.the_information_should_successfully_be_submitted_via_the_contact_us_form()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Submit data to webdriveruniversity.com using contact us form",
+    "description": "",
+    "id": "submit-data-to-webdriveruniversity.com-using-contact-us-form",
+    "keyword": "Feature",
+    "uri": "contactus.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3323910742,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "validate promo code alert is visible when clicking on the special offers link",
+        "description": "",
+        "id": "products-page;validate-promo-code-alert-is-visible-when-clicking-on-the-special-offers-link;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 636633606,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3709233435,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user navigates to \"http://www.webdriveruniversity.com/Page-Object-Model/products.html\" website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.webdriveruniversity.com/Page-Object-Model/products.html",
+                  "offset": 19
+                }
+              ],
+              "location": "ProductSteps.user_navigates_to_website(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 779339285,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on \"#container-special-offers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "#container-special-offers",
+                  "offset": 16
+                }
+              ],
+              "location": "ProductSteps.user_clicks_on(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 756974240,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should be presented with a promo alert",
+            "match": {
+              "location": "ProductSteps.user_should_be_presented_with_a_promo_alert()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Products page",
+    "description": "",
+    "id": "products-page",
+    "keyword": "Feature",
+    "uri": "products.feature"
+  }
+]
