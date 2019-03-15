@@ -1,6 +1,12 @@
 package runners;
 
+import java.io.File;
+
 import org.junit.runner.RunWith;
+import org.testng.annotations.AfterClass;
+
+import com.cucumber.listener.Reporter;
+
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
@@ -15,4 +21,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json","com.cucumber.listener.ExtentCucumberFormatter:output/report.html"}) //,"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"
 
 public class MainRunner extends AbstractTestNGCucumberTests {
+	@AfterClass
+	public static void writeExtentReport() {
+		Reporter.loadXMLConfig(new File(System.getProperty("user.dir") + "\\src\\main\\java\\utils\\ReportsConfig.xml"));
+	}
 }

@@ -7,6 +7,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pageObjects.BasePage;
 import utils.DriverFactory;
 
 public class ContactUsSteps extends DriverFactory {
@@ -34,6 +35,7 @@ public class ContactUsSteps extends DriverFactory {
 	@And("^i enter comments$")
 	public void i_enter_comments(DataTable dataTable) throws Exception {
 		contactUsPage.enterComments(dataTable, 0, 1);
+		BasePage.captureScreenshot();
 	}
 
 	@When("^i click on the submit button$")
@@ -43,6 +45,7 @@ public class ContactUsSteps extends DriverFactory {
 
 	@Then("^the information should successfully be submitted via the contact us form$")
 	public void the_information_should_successfully_be_submitted_via_the_contact_us_form() throws Exception  {
+		Assert.fail();
 		Assert.assertEquals("thankyouforyourmessage!", contactUsPage.confirmContactUsFormSubmissionWasSuccessful().getText().toLowerCase().replaceAll("[ ()0-9]", ""));
 	}
 }

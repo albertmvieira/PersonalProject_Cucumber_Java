@@ -1,6 +1,8 @@
 package stepDefinitions;
 
 import java.io.IOException;
+
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -16,6 +18,7 @@ public class ProductSteps extends DriverFactory {
 
 	@When("^user clicks on \"([^\"]*)\"$")
 	public void user_clicks_on(String locator) throws InterruptedException, IOException {
+		Assert.fail();
 		BasePage basePage = new BasePage();
 		basePage.WaitUntilWebElementIsVisibleUsingByLocator(By.cssSelector(locator));
 		getDriver().findElement(By.cssSelector(locator)).click();
