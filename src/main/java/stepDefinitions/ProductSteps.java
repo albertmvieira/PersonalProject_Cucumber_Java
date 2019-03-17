@@ -2,7 +2,6 @@ package stepDefinitions;
 
 import java.io.IOException;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
