@@ -1,9 +1,8 @@
 #Reports and Screenshots
+target/
+!target/cucumber/index.html
 test-output/
-target/classes
-target/cucumber
-target/generated-sources
-target/maven-status
-target/surefire-reports
+!test-output/index.html
 output/
-/target/
+!output/report.html
+

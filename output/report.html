@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 17, 2019 01:48:21 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 20, 2019 08:36:20 PM</span>
 				</a>
 			</li>
 			<li>
@@ -130,10 +130,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>2</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -145,10 +145,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -160,10 +160,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='76.923%'><span class='strong'>10</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='84.615%'><span class='strong'>11</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='15.385%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='7.692%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='7.692%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='7.692%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -177,15 +177,15 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Submit data to webdriveruniversity.com using contact us form</span>
-						<span class='test-time'>Mar 17, 2019 01:48:21 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Mar 20, 2019 08:36:20 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 16s+892ms</span>
+<div class='scenario node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 0m 17s+103ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Submit valid data via contact us form</span>
@@ -231,7 +231,7 @@
 			<span class="bdd-step-name">And i enter comments</span>
 				<div class='pre'><table><tr><td>example comment one</td><td>example comment two</td></tr></table></div>
 				<div class='pre'>Taking a screenshot!</div>
-				<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Sun_Mar_17_13_48_34_BRT_2019.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Sun_Mar_17_13_48_34_BRT_2019.jpg height=300 width=400></img></a></div>
+				<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Wed_Mar_20_20_36_33_BRT_2019.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Wed_Mar_20_20_36_33_BRT_2019.jpg height=300 width=400></img></a></div>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -243,19 +243,14 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='9' class='node then fail' status='fail'>
+		<li test-id='9' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then the information should successfully be submitted via the contact us form</span>
-				<div class='pre'><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.fail(Assert.java:95)
-	at stepDefinitions.ContactUsSteps.the_information_should_successfully_be_submitted_via_the_contact_us_form(ContactUsSteps.java:48)
-	at ?.Then the information should successfully be submitted via the contact us form(contactus.feature:12)
-</pre></div>
 				<div class='pre'>Taking a screenshot!</div>
-				<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Sun_Mar_17_13_48_38_BRT_2019.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Sun_Mar_17_13_48_38_BRT_2019.jpg height=300 width=400></img></a></div>
+				<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Wed_Mar_20_20_36_37_BRT_2019.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Wed_Mar_20_20_36_37_BRT_2019.jpg height=300 width=400></img></a></div>
+				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
@@ -267,12 +262,12 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='10'>
 					<div class='test-heading'>
 						<span class='test-name'>Products page</span>
-						<span class='test-time'>Mar 17, 2019 01:48:38 PM</span>
+						<span class='test-time'>Mar 20, 2019 08:36:38 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='11' status='fail'>
-	<span class='duration right label'>0h 0m 41s+312ms</span>
+	<span class='duration right label'>0h 0m 43s+506ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">validate promo code alert is visible when clicking on the special offers link</span>
@@ -295,6 +290,8 @@
 					</li>
 					<li test-id='15' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then user should be presented with a promo alert</span>
+							<div class='pre'>Taking a screenshot!</div>
+							<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Wed_Mar_20_20_36_52_BRT_2019.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Wed_Mar_20_20_36_52_BRT_2019.jpg height=300 width=400></img></a></div>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
@@ -314,7 +311,7 @@
 						<span class="bdd-step-name">When user clicks on "#container-special-offers1"</span>
 							<div class='pre'><pre>java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of element located by By.cssSelector: #container-special-offers1 (tried for 15 second(s) with 500 milliseconds interval)
 	at org.junit.Assert.fail(Assert.java:88)
-	at pageObjects.BasePage.WaitUntilWebElementIsVisibleUsingByLocator(BasePage.java:250)
+	at pageObjects.BasePage.WaitUntilWebElementIsVisibleUsingByLocator(BasePage.java:249)
 	at stepDefinitions.ProductSteps.user_clicks_on(ProductSteps.java:21)
 	at ?.When user clicks on "#container-special-offers1"(products.feature:5)
 </pre></div>
@@ -323,7 +320,7 @@
 						<span class="bdd-step-name">Then user should be presented with a promo alert</span>
 							<div class='pre'>skipped</div>
 							<div class='pre'>Taking a screenshot!</div>
-							<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Sun_Mar_17_13_49_20_BRT_2019.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Sun_Mar_17_13_49_20_BRT_2019.jpg height=300 width=400></img></a></div>
+							<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Wed_Mar_20_20_37_21_BRT_2019.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Wed_Mar_20_20_37_21_BRT_2019.jpg height=300 width=400></img></a></div>
 					</li>
 				</ul>
 		</li>
@@ -385,7 +382,7 @@
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -399,21 +396,11 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Mar 17, 2019 01:48:37 PM</td>
-                                                        <td class='linked' test-id='9'>Submit data to webdriveruniversity.com using contact us form.Submit valid data via contact us form.Then the information should successfully be submitted via the contact us form</td>
-                                                        <td><pre><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.fail(Assert.java:95)
-	at stepDefinitions.ContactUsSteps.the_information_should_successfully_be_submitted_via_the_contact_us_form(ContactUsSteps.java:48)
-	at ?.Then the information should successfully be submitted via the contact us form(contactus.feature:12)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Mar 17, 2019 01:49:04 PM</td>
+                                                        <td>Mar 20, 2019 08:37:06 PM</td>
                                                         <td class='linked' test-id='18'>Products page.validate promo code alert is visible when clicking on the special offers link.validate promo code alert is visible when clicking on the special offers link.When user clicks on "#container-special-offers1"</td>
                                                         <td><pre><pre>java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of element located by By.cssSelector: #container-special-offers1 (tried for 15 second(s) with 500 milliseconds interval)
 	at org.junit.Assert.fail(Assert.java:88)
-	at pageObjects.BasePage.WaitUntilWebElementIsVisibleUsingByLocator(BasePage.java:250)
+	at pageObjects.BasePage.WaitUntilWebElementIsVisibleUsingByLocator(BasePage.java:249)
 	at stepDefinitions.ProductSteps.user_clicks_on(ProductSteps.java:21)
 	at ?.When user clicks on "#container-special-offers1"(products.feature:5)
 </pre></pre></td>
@@ -460,19 +447,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 17, 2019 01:48:21 PM</div>
+					<div class='panel-lead'>Mar 20, 2019 08:36:20 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 17, 2019 01:49:20 PM</div>
+			 		<div class='panel-lead'>Mar 20, 2019 08:37:22 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>59,787ms</div>
+					<div class='panel-lead'>62,418ms</div>
 				</div>
 			</div>
 		</div>
@@ -485,31 +472,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 2,
+				passParent: 1,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 1,
 				
-				passChild: 1,
-				failChild: 2,
+				passChild: 2,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 2,
+				exceptionsChild: 1,
 				
-				passGrandChild: 10,
-				failGrandChild: 2,
+				passGrandChild: 11,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 1,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 3,
+				exceptionsGrandChild: 2,
 			};
 		</script>
 		

@@ -9,11 +9,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
+import cucumber.api.Scenario;
 import pageObjects.ContactUs_Page;
 import pageObjects.Products_Page;
 
 public class DriverFactory {
 	public static WebDriver driver;
+	public static Scenario scenario;
 	public static ContactUs_Page contactUsPage;
 	public static Products_Page productsPage;
 

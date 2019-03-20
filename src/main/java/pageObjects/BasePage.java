@@ -26,15 +26,14 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.cucumber.listener.Reporter;
-
 import utils.DriverFactory;
 
 public class BasePage extends DriverFactory {
 	protected WebDriverWait wait;
 	protected JavascriptExecutor jsExecutor;
 	private static String screenshotName;
+	
 
 	public BasePage() throws IOException {
 		this.wait = new WebDriverWait(driver, 15);
@@ -374,15 +373,24 @@ public class BasePage extends DriverFactory {
 	}
 	
 	public static void captureScreenshot() throws IOException {
-		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
+		//Embed screenshot to the extent report
+		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);	
 		screenshotName = returnDateStamp(".jpg");
-		
 		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\output\\imgs\\" + screenshotName));
-		
 		Reporter.addStepLog("Taking a screenshot!");
 		//Reporter.addStepLog("<br>"); //Adiciona linha entre a frase e o print
 		Reporter.addStepLog("<a target=\"_blank\", href="+ returnScreenshotName() + "><img src="+ returnScreenshotName() + " height=300 width=400></img></a>");
+		
+		//Embed screenshot to the cucumber report
+		try {
+			byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			scenario.embed(screenshot, "image/png");
+		} catch (Exception e) {
+			System.out.println("Error to embed screenshot");
+			Assert.fail("Error to embed screenshot, Exception: " + e.getMessage());
+		}
+		
 		
 	}
 	
@@ -416,6 +424,7 @@ public class BasePage extends DriverFactory {
 		File dest = new File(System.getProperty("user.dir") + "\\output\\" + date.toString() + ".html");
 		copyFileUsingStream(source, dest);
 	}
+		
 	/**********************************************************************************/
 	/**********************************************************************************/	
 }
