@@ -19,6 +19,7 @@ public class DriverFactory {
 	public static ContactUs_Page contactUsPage;
 	public static Products_Page productsPage;
 
+	@SuppressWarnings("deprecation")
 	public WebDriver getDriver() {
 		try {
 			// Read Config
