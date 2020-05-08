@@ -39,6 +39,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -52,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 7, 2020 08:54:51 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 8, 2020 11:54:45 AM</span>
 				</a>
 			</li>
 			<li>
@@ -78,6 +79,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -139,10 +142,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -154,10 +157,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -169,10 +172,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='84.615%'><span class='strong'>11</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='7.692%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='7.692%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -189,7 +192,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Submit data to webdriveruniversity.com using contact us form</span>
-						<span class='test-time'>May 7, 2020 08:54:51 PM</span>
+						<span class='test-time'>May 8, 2020 11:54:45 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -197,7 +200,7 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Submit_form</span>
 	</div>
-	<span class='duration right label'>0h 0m 19s+680ms</span>
+	<span class='duration right label'>0h 0m 20s+188ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Submit valid data via contact us form</span>
@@ -243,7 +246,7 @@
 			<span class="bdd-step-name">And i enter comments</span>
 				<div class='pre'><table><tr><td>example comment one</td><td>example comment two</td></tr></table></div>
 				<div class='pre'>Taking a screenshot!</div>
-				<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Thu_May_07_20_55_07_BRT_2020.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Thu_May_07_20_55_07_BRT_2020.jpg height=300 width=400></img></a></div>
+				<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Fri_May_08_11_55_01_BRT_2020.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Fri_May_08_11_55_01_BRT_2020.jpg height=300 width=400></img></a></div>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -261,7 +264,7 @@
 			
 			<span class="bdd-step-name">Then the information should successfully be submitted via the contact us form</span>
 				<div class='pre'>Taking a screenshot!</div>
-				<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Thu_May_07_20_55_11_BRT_2020.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Thu_May_07_20_55_11_BRT_2020.jpg height=300 width=400></img></a></div>
+				<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Fri_May_08_11_55_05_BRT_2020.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Fri_May_08_11_55_05_BRT_2020.jpg height=300 width=400></img></a></div>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -271,15 +274,15 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='10'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='10'>
 					<div class='test-heading'>
 						<span class='test-name'>Products page</span>
-						<span class='test-time'>May 7, 2020 08:55:12 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>May 8, 2020 11:55:07 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='11' status='pass'>
-	<span class='duration right label'>0h 0m 19s+715ms</span>
+<div class='scenariooutline node' test-id='11' status='fail'>
+	<span class='duration right label'>0h 0m 44s+758ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">validate promo code alert is visible when clicking on the special offers link</span>
@@ -306,8 +309,39 @@
 					<li test-id='15' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then user should be presented with a promo alert</span>
 							<div class='pre'>Taking a screenshot!</div>
-							<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Thu_May_07_20_55_31_BRT_2020.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Thu_May_07_20_55_31_BRT_2020.jpg height=300 width=400></img></a></div>
+							<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Fri_May_08_11_55_24_BRT_2020.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Fri_May_08_11_55_24_BRT_2020.jpg height=300 width=400></img></a></div>
 							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='16' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@product_offer</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">validate promo code alert is visible when clicking on the special offers link</span>
+			
+				<ul class='steps'>
+					<li test-id='17' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given user navigates to "http://www.webdriveruniversity.com/Page-Object-Model/products.html" website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='18' class='node when fail' status='fail'><b>When</b>
+						<span class="bdd-step-name">When user clicks on "#container-special-offers2"</span>
+							<div class='pre'><pre>java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of element located by By.cssSelector: #container-special-offers2 (tried for 15 second(s) with 500 milliseconds interval)
+	at org.junit.Assert.fail(Assert.java:88)
+	at pageObjects.BasePage.WaitUntilWebElementIsVisibleUsingByLocator(BasePage.java:249)
+	at stepDefinitions.ProductSteps.user_clicks_on(ProductSteps.java:21)
+	at ?.When user clicks on "#container-special-offers2"(products.feature:6)
+</pre></div>
+					</li>
+					<li test-id='19' class='node then skip' status='skip'><b>Then</b>
+						<span class="bdd-step-name">Then user should be presented with a promo alert</span>
+							<div class='pre'>skipped</div>
+							<div class='pre'>Taking a screenshot!</div>
+							<div class='pre'><a target="_blank", href=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Fri_May_08_11_55_52_BRT_2020.jpg><img src=C:\Users\alber\eclipse-workspace\PersonalProject\CucumberFramework\output\imgs\Fri_May_08_11_55_52_BRT_2020.jpg height=300 width=400></img></a></div>
 					</li>
 				</ul>
 		</li>
@@ -390,7 +424,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 7, 2020 08:54:52 PM</td>
+										<td>May 8, 2020 11:54:46 AM</td>
 										<td class='linked' test-id='2'>Submit data to webdriveruniversity.com using contact us form.Submit valid data via contact us form</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -404,12 +438,13 @@
 						<span class='category-name'>@product_offer</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -424,9 +459,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 7, 2020 08:55:12 PM</td>
+										<td>May 8, 2020 11:55:07 AM</td>
 										<td class='linked' test-id='12'>Products page.validate promo code alert is visible when clicking on the special offers link.validate promo code alert is visible when clicking on the special offers link</td>
 										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 8, 2020 11:55:27 AM</td>
+										<td class='linked' test-id='16'>Products page.validate promo code alert is visible when clicking on the special offers link.validate promo code alert is visible when clicking on the special offers link</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -445,6 +485,72 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>May 8, 2020 11:55:36 AM</td>
+                                                        <td class='linked' test-id='18'>Products page.validate promo code alert is visible when clicking on the special offers link.validate promo code alert is visible when clicking on the special offers link.When user clicks on "#container-special-offers2"</td>
+                                                        <td><pre><pre>java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of element located by By.cssSelector: #container-special-offers2 (tried for 15 second(s) with 500 milliseconds interval)
+	at org.junit.Assert.fail(Assert.java:88)
+	at pageObjects.BasePage.WaitUntilWebElementIsVisibleUsingByLocator(BasePage.java:249)
+	at stepDefinitions.ProductSteps.user_clicks_on(ProductSteps.java:21)
+	at ?.When user clicks on "#container-special-offers2"(products.feature:6)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -460,31 +566,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>13</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 7, 2020 08:54:51 PM</div>
+					<div class='panel-lead'>May 8, 2020 11:54:45 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 7, 2020 08:55:33 PM</div>
+			 		<div class='panel-lead'>May 8, 2020 11:55:53 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>42,298ms</div>
+					<div class='panel-lead'>68,169ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -511,10 +617,10 @@
 						<tr>
 							<td>@product_offer</td>
 							<td>1</td>
-							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									50%
 							</td>
 						</tr>
 					</table>
@@ -530,31 +636,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
-				failParent: 0,
+				passParent: 1,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
 				passChild: 2,
-				failChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
-				passGrandChild: 10,
-				failGrandChild: 0,
+				passGrandChild: 11,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 1,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 2,
 			};
 		</script>
 		
